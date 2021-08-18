@@ -1,9 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import UseReducer from './UseReducer';
 import './App.css';
 
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <UseReducer />
+    </div>
+  );
 }
 
 export default App;
