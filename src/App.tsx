@@ -1,11 +1,13 @@
 import React from 'react';
-import UseReducer from './UseReducer';
 import './App.css';
+import UseReducer from './UseReducer';
+import UseRef from './UseRef';
 
 function App() {
   return (
     <div className='App'>
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <UseRef />
     </div>
   );
 }
