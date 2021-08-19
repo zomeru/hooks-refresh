@@ -26,11 +26,13 @@ const UseMemo: React.FC<UseMemoProps> = ({}) => {
       }
     }
 
+    // Will be logged every time any state is changed
     console.log('THIS WAS COMPUTED');
 
     return longestName;
   };
 
+  // Makes sure will only re-render when DATA is changed
   const getLongestName = useMemo(() => findLongestName(data), [data]);
 
   console.log('TOGGLE', toggle);
