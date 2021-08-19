@@ -2,7 +2,12 @@ import React, { useState, createContext } from 'react';
 import Login from '../components/Login';
 import User from '../components/User';
 
-export const AppContext: any = createContext(null);
+interface ContextProps {
+  username: string;
+  setUsername: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export const AppContext = createContext<ContextProps>({} as ContextProps);
 
 interface UseContextProps {}
 
