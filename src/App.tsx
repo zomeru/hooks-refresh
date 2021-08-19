@@ -5,6 +5,7 @@ import UseRef from './UseRef';
 import UseLayoutEffect from './UseLayoutEffect';
 import UseImperativeHandle from './UseImperativeHandle';
 import UseContext from './UseContext';
+import UseMemo from './UseMemo';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <UseRef /> */}
       {/* <UseLayoutEffect /> */}
       {/* <UseImperativeHandle /> */}
-      <UseContext />
+      {/* <UseContext /> */}
+      <UseMemo />
     </div>
   );
 }
